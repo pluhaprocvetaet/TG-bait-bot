@@ -2,8 +2,10 @@ import sqlite3
 import string
 import os, time, random, configparser
 from aiogram import Bot, types
-from aiogram.utils import executor
-from aiogram.dispatcher import Dispatcher, FSMContext
+import asyncio
+from aiogram import Bot, Dispatcher
+from aiogram import Dispatcher
+from aiogram.fsm.context import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.types import ReplyKeyboardRemove, ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
